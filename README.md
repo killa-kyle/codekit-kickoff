@@ -3,7 +3,7 @@ Front End Interview Questions
 
 
 
-A simple responsive site that allows your to store your answers to the [Front-End Job Interview Questions](https://github.com/darcyclarke/Front-end-Developer-Interview-Questions) repo.[ View Demo](http://killakyle.com/Interview)
+A simple responsive site that allows your to store your answers to the [Front-End Job Interview Questions](https://github.com/darcyclarke/Front-end-Developer-Interview-Questions) repo.[ View Demo](http://killakyle.com/interview)
 
 ## What It Does
 
