@@ -1,7 +1,25 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "17756",
+"creatorBuild": "17945",
 "files": {
+	"\/app\/_\/css\/theme.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/_\/css\/theme.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/answers.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/answers.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/app\/assets\/css\/app.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -31,6 +49,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/app\/save.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/save.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/Textile.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/Textile.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/build\/js\/app.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -39,6 +75,17 @@
 		"outputAbbreviatedPath": "\/app\/assets\/js\/app.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/build\/js\/jquery.jeditable.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/js\/jquery.jeditable.js",
+		"outputAbbreviatedPath": "\/app\/_\/js\/jquery.jeditable-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 2
 		},
@@ -3230,6 +3277,26 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/build\/styles\/less\/partials\/interview.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/styles\/less\/partials\/interview.less",
+		"outputAbbreviatedPath": "\/app\/_\/css\/interview.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/build\/styles\/less\/partials\/viewport.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -3404,7 +3471,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Michael Lesher",
+"lastSavedByUser": "Kyle Rose",
 "manualImportLinks": {
 	"\/build\/js\/app.js": [
 		{
@@ -3418,14 +3485,20 @@
 			"linkedFileAbbreviatedPath": "\/build\/lib\/bootstrap\/js\/bootstrap.min.js",
 			"position": 1,
 			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/build\/js\/jquery.jeditable.js",
+			"position": 2,
+			"type": 0
 			}
 		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "Codekit Kickoff",
-	"displayValueWasSetByUser": 0,
-	"iconImageName": "compass_darkGray"
+	"displayValue": "InterviewQuestions",
+	"displayValueWasSetByUser": 1,
+	"iconImageName": "meme-soon"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,
