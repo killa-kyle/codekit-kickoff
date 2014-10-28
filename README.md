@@ -11,10 +11,14 @@ Allows inline editing saving of answers with HTML5 session storage.
 
 ## What It Still Needs to Do
 
--Remaining questions need to be added
--Categories 
+- Remaining questions need to be added
+- Categories 
 - Javascript needs fine tuning
-- dynamically insert both questions and answers
+- Dynamically insert both questions and answers
+- Navigation
+- Editable Questions as well as answers
+- Scroll to Top
+
  
 
 ## Acknowledgement

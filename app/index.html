@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="">        
 
-        <title>Front End Developer Interview Questions worksheet</title>		
+        <title>Front-end Job Interview Questions</title>		
 
         <link rel="stylesheet" media="screen" href="assets/css/app.css">     
         <script type="text/javascript">
@@ -20,26 +20,20 @@
 
             for (var i = 0; i < answers.length; i++) {
                 
+
                 var self = answers[i];
                 myArray.push(self.innerHTML);
                 // console.log(myArray);
-
-
-                
-
 
                 //save array to local storage
                 localStorage.setItem('questions', JSON.stringify(myArray));
             }
         //write a confirmation to the user
         document.getElementById("update").innerHTML="Saved!";
-        $('#update').fadeOut( 2000, "swing" );   
+        $('#update').animate({ opacity: 0 },1000, 'linear');
+
 
         }
-
-
-
-
 
         // on pageload, check storage for edits
         function checkEdits() {
@@ -48,86 +42,175 @@
             var myArray = [];
 
         //find out if the user has previously saved edits
-        if(localStorage.questions!==null)
+        if(localStorage.questions!==null){
             myArray = localStorage.getItem('questions');
             // console.log(myArray);
 
-            for (var i = 0; i < answers.length; i++) {
-                var self = answers[i];
-                oldAnswers = JSON.parse(myArray);
-                
-                self.innerHTML = oldAnswers[i];
-
-
-                console.log(oldAnswers[i]);
-
+                for (var i = 0; i < answers.length; i++) {
+                    var self = answers[i];
+                    oldAnswers = JSON.parse(myArray);
+                    if (oldAnswers[i] !==undefined) {
+                    self.innerHTML = oldAnswers[i];
+                }
+                    console.log("success!");
+                }
             }
-            
         }
+
 
         function dropFocus(){
-          $(".answer").blur();
+          // $(".answer").blur();
+
         }
         </script> 
+
   <meta charset="utf-8">
   <title>JS BIN</title>
 </head>
-<!-- <body onload=""> -->
 <body onload="checkEdits()">
-  
- 
+<div class="container main animated " id="wrapper">
+    <h1>Front-end Job Interview Questions</h1>
+    <ul class="animated bounce">
 
-<div class="container main">
-
-<h1>Interview Questions</h1>
-<ul>
-
-    <!-- Question 1  -->
-    <li >
-        <input type="checkbox" checked>
-        <i></i>
-        <h2>What did you learn yesterday/this week?</h2>
+        <li><!--  General Questions List -->
         
-        <!--  this first answer works because I'm selecting with an id, how can I save all of the answers that were edited on the page to localStorage? An array?  -->
-        <p class="answer" id="a0"  contenteditable="true">Answer 1</p>
+        <h3 id="sec-general">general questions</h3>
+        <ul>
+            <!-- Question 1  -->
+            <li >
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>What did you learn yesterday / this week?</h2>
+                <p class="answer" id="a0"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question 2 -->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>What excites or interests you about coding?</h2>
+                <p class="answer" id="a1"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question 3  -->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?</h2>
+                <p class="answer" id="a2"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question 4  -->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>Talk about your preferred development environment. (OS, Editor or IDE, Browsers, Tools etc.)</h2>
+                <p class="answer" id="a3"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question 5  -->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>Which version control systems are you familiar with?</h2>
+                <p class="answer" id="a4"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question 6 -->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>Can you describe your workflow when you create a web page?</h2>
+                <p class="answer" id="a5"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question -->
+            <li >
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>If you have 5 different stylesheets, how would you best integrate them into the site?</h2>
+                <p class="answer" id="a6"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question-->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>Can you describe the difference between progressive enhancement and graceful degradation?</h2>
+                <p class="answer" id="a7"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question -->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>How would you optimize a websites assets/resources?</h2>
+                <p class="answer" id="a8"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question -->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>Traditionally, why has it been better to serve site assets from multiple domains?</h2>
+                <p class="answer" id="a9"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question -->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>If you could master one technology this year, what would it be?</h2>
+                <p class="answer" id="a10"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question-->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen</h2>
+                <p class="answer" id="a11"  contenteditable="true">Answer Goes Here</p>
+            </li>
+        </ul>
     </li>
-    <!-- Question 2 -->
-    <li>
-        <input type="checkbox" checked>
-        <i></i>
-        <h2>What excites or interests you about coding?</h2>
-        <p class="answer" id="a1"  contenteditable="true">Answer 2</p>
-    </li>
-    <!-- Question 3  -->
-    <li>
-        <input type="checkbox" checked>
-        <i></i>
-        <h2>What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?</h2>
-        <p class="answer" id="a2"  contenteditable="true">Answer 3</p>
-    </li>
-    <!-- Question 4  -->
-    <li>
-        <input type="checkbox" checked>
-        <i></i>
-        <h2>Talk about your preferred development environment. (OS, Editor or IDE, Browsers, Tools etc.)</h2>
-        <p class="answer" id="a3"  contenteditable="true">Answer 4</p>
-    </li>
-    <!-- Question 5  -->
-    <li>
-        <input type="checkbox" checked>
-        <i></i>
-        <h2>Which version control systems are you familiar with?</h2>
-        <p class="answer" id="a4"  contenteditable="true">Answer goes here</p>
+
+
+
+
+        <li id="sec-html"><!--  HTML Questions List -->
+        
+        <h3>html questions</h3>
+        <ul>
+            <!-- Question 1  -->
+            <li >
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>What's a doctype do?</h2>
+                <p class="answer" id="a12"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question 2 -->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>What are data- attributes good for?</h2>
+                <p class="answer" id="a13"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question 3  -->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>Describe the difference between cookies, sessionStorage and localStorage</h2>
+                <p class="answer" id="a14"  contenteditable="true">Answer Goes Here</p>
+            </li>
+            <!-- Question 4  -->
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>Can you explain the difference between GET and POST?</h2>
+                <p class="answer" id="a15"  contenteditable="true">Answer Goes Here</p>
+            </li>
+        </ul>
     </li>
 </ul>
 <!-- Save button -->
 <div class="save">
     <input id="save" type="button" class="btn btn-primary" value="save my edits" onclick="saveEdits()"/>
 </div>
-<div class="container">
+<div class="container text-center">
     <p id="update"> Edit the text and click to save for next time</p>
 </div>
-</div>
+
+</div> 
+
 
 
 		<script src="assets/js/app.min.js"></script>	

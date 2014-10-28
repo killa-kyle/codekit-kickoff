@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="">        
 
-        <title>Front End Developer Interview Questions worksheet</title>		
+        <title>Front-end Job Interview Questions</title>		
 
         <link rel="stylesheet" media="screen" href="assets/css/app.css">     
         <script type="text/javascript">
@@ -20,26 +20,20 @@
 
             for (var i = 0; i < answers.length; i++) {
                 
+
                 var self = answers[i];
                 myArray.push(self.innerHTML);
                 // console.log(myArray);
-
-
-                
-
 
                 //save array to local storage
                 localStorage.setItem('questions', JSON.stringify(myArray));
             }
         //write a confirmation to the user
         document.getElementById("update").innerHTML="Saved!";
-        $('#update').fadeOut( 2000, "swing" );   
+        $('#update').animate({ opacity: 0 },1000, 'linear');
+
 
         }
-
-
-
-
 
         // on pageload, check storage for edits
         function checkEdits() {
@@ -48,30 +42,29 @@
             var myArray = [];
 
         //find out if the user has previously saved edits
-        if(localStorage.questions!==null)
+        if(localStorage.questions!==null){
             myArray = localStorage.getItem('questions');
             // console.log(myArray);
 
-            for (var i = 0; i < answers.length; i++) {
-                var self = answers[i];
-                oldAnswers = JSON.parse(myArray);
-                
-                self.innerHTML = oldAnswers[i];
-
-
-                console.log(oldAnswers[i]);
-
+                for (var i = 0; i < answers.length; i++) {
+                    var self = answers[i];
+                    oldAnswers = JSON.parse(myArray);
+                    if (oldAnswers[i] !==undefined) {
+                    self.innerHTML = oldAnswers[i];
+                }
+                    console.log("success!");
+                }
             }
-            
         }
+
 
         function dropFocus(){
-          $(".answer").blur();
+          // $(".answer").blur();
+
         }
         </script> 
+
   <meta charset="utf-8">
   <title>JS BIN</title>
 </head>
-<!-- <body onload=""> -->
 <body onload="checkEdits()">
-  
